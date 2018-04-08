@@ -1,5 +1,3 @@
-<img src='https://ooo.0o0.ooo/2016/12/04/5844355f50cf0.png' width='300'>
-
 # React News Board
 
 ![Build: Passing](https://img.shields.io/badge/build-passing-brightgreen.svg)
@@ -13,11 +11,6 @@
 - React 用于构建 UI
 - Redux 用于数据流管理
 
-本项目相关博文：[实例讲解基于 Flask+React 的全栈开发和部署][0]。
-
-目前项目已经实现了基本功能，界面大概如下：
-
-![home](https://ooo.0o0.ooo/2017/01/05/586e54f3efff0.png)
 
 # Installation
 
@@ -78,9 +71,9 @@ bundle.js.map    6.05 MB       0  [emitted]  main
 
 本项目的部署采用 `nginx+gunicorn+supervisor` 的方式，其中：
 
-- [nginx][2] 用来做反向代理服务器：通过接收 Internet 上的连接请求，将请求转发给内网中的目标服务器，再将从目标服务器得到的结果返回给 Internet 上请求连接的客户端（比如浏览器）；
-- [gunicorn][3] 是一个高效的 Python WSGI Server，我们通常用它来运行 WSGI (Web Server Gateway Interface，Web 服务器网关接口) 应用（比如本项目的 Flask 应用）；
-- [supervisor][4] 是一个进程管理工具，可以很方便地启动、关闭和重启进程等；
+- [nginx] 用来做反向代理服务器：通过接收 Internet 上的连接请求，将请求转发给内网中的目标服务器，再将从目标服务器得到的结果返回给 Internet 上请求连接的客户端（比如浏览器）；
+- [gunicorn] 是一个高效的 Python WSGI Server，我们通常用它来运行 WSGI (Web Server Gateway Interface，Web 服务器网关接口) 应用（比如本项目的 Flask 应用）；
+- [supervisor] 是一个进程管理工具，可以很方便地启动、关闭和重启进程等；
 
 项目部署需要用到的文件在 deploy 目录下：
 
@@ -128,15 +121,6 @@ $ fab deploy
 - 知乎日报（或专栏等）
 - 支持滚动到底部进行分页加载
 
-# LICENSE
 
-[GPL-2.0](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
-
-
-[0]: http://funhacks.net/2016/12/06/flask_react_news/
-[1]: http://pythonguidecn.readthedocs.io/zh/latest/dev/virtualenvs.html
-[2]: https://www.nginx.com/
-[3]: http://gunicorn.org/
-[4]: http://supervisord.org/
 
 
